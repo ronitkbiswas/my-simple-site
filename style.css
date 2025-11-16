@@ -1,0 +1,4 @@
+:root { --accent: #0b66ff; font-family: Inter, system-ui, Arial; }
+body { display:flex; gap:20px; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; margin:0; }
+h1 { color:var(--accent); }
+button { padding:10px 16px; border-radius:8px; border:1px solid #ccc; background:transparent; cursor:pointer; }
