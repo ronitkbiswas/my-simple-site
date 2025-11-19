@@ -1,13 +1,34 @@
-const btn = document.getElementById('btn');
+/* const btn = document.getElementById('btn');
 const title = document.getElementById('title');
 
 btn.addEventListener('click', () => {
 	title.textContent = 'clicked';
 	alert('good');
 });
+*/
+const userName = String(prompt("Your name please: "));
+console.log("User: ", userName);
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// just trying newly learn js
 
-const lastNumber = numbers[numbers.length - 1];
+const numbers = [1, 2, 3];
+let m = 0;
+do {
+	console.log(numbers[m]);
+	m++;
+} while (m < numbers.length);
 
-console.log("last number was: ", lastNumber);
+const ronitkbiswas = {
+	fullName: "Ronit Kumar Biswas",
+	age: 30,
+	city: "Kolkata",
+	friends: ['sujoy', 'mihir', 'supratik'],
+	calculateBirthYear: function () {
+		return 2025 - this.age;
+	},
+	showAllFriends: function () {
+		return this.friends;
+	}
+};
+console.log("birth year: ", ronitkbiswas.calculateBirthYear());
+console.log("friends: ", ronitkbiswas.showAllFriends());
