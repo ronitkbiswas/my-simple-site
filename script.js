@@ -6,10 +6,8 @@ btn.addEventListener('click', () => {
 	alert('good');
 });
 
-const ronitkbiswas = {
-	
-	fName: "Ronit Kumar Biswas",
-	age: 30,
-	city: "Kolkata"
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-};
+const lastNumber = numbers[numbers.length - 1];
+
+console.log("last number was: ", lastNumber);
