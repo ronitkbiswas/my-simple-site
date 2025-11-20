@@ -19,17 +19,19 @@
     <br>
     <progress></progress>
   </span>
-  <h4 id="t"></h4>
+  // years....
+  <h4 id='op'></h4>
   <script>
-
-    const userAge = String(prompt('Age: '));
-
+    const userYear = Number(prompt("Year: "));
     const currentYear = new Date().getFullYear();
 
-    const f = currentYear - userAge;
-
-    document.getElementById('t').innerHTML = "You were born in the year " + f;
-
+    if (userYear > currentYear) {
+      const past = userYear - currentYear;
+      document.getElementById('op').innerHTML = userYear + " is " + past + " years from today... :)";
+    } else {
+      const future = currentYear - userYear;
+      document.getElementById('op').innerHTML = userYear + " was " + future + " years ago... :)";
+    }
   </script>
   <script src="script.js"></script>
 </body>
