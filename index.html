@@ -19,19 +19,18 @@
     <br>
     <progress></progress>
   </span>
-
-  <div id="t">
-    <span id="p" data-id="1">CLICK ME</span>
-  </div>
+  <h4 id="t"></h4>
   <script>
-    document.querySelector('#t').addEventListener('click', (e) => {
-      const f = e.target.closest('span');
-      if (f) {
-        console.log('clicked span', f.dataset.id);
-      }
-    });  
-  </script>
 
+    const userAge = String(prompt('Age: '));
+
+    const currentYear = new Date().getFullYear();
+
+    const f = currentYear - userAge;
+
+    document.getElementById('t').innerHTML = "You were born in the year " + f;
+
+  </script>
   <script src="script.js"></script>
 </body>
 
