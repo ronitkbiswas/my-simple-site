@@ -6,8 +6,8 @@ btn.addEventListener('click', () => {
 	alert('good');
 });
 */
-const userName = String(prompt("Your name please: "));
-console.log("User: ", userName);
+// const userName = String(prompt("Your name please: "));
+// console.log("User: ", userName);
 
 // just trying newly learn js
 
