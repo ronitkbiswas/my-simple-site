@@ -19,6 +19,19 @@
     <br>
     <progress></progress>
   </span>
+
+  <div id="t">
+    <span id="p" data-id="1">CLICK ME</span>
+  </div>
+  <script>
+    document.querySelector('#t').addEventListener('click', (e) => {
+      const f = e.target.closest('span');
+      if (f) {
+        console.log('clicked span', f.dataset.id);
+      }
+    });  
+  </script>
+
   <script src="script.js"></script>
 </body>
 
